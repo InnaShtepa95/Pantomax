@@ -63,6 +63,12 @@ header .container-fluid {
           padding-left: 10px;
           color: #FFFFFF;
           opacity: 1; }
+      header .container-fluid .container .description .count_and_form .sale {
+        text-align: center; }
+        header .container-fluid .container .description .count_and_form .sale img {
+          margin-bottom: 0; }
+        header .container-fluid .container .description .count_and_form .sale h3 {
+          margin-bottom: 0; }
       header .container-fluid .container .description .count_and_form .contact_form {
         margin-top: 30px;
         margin-bottom: 25px; }
