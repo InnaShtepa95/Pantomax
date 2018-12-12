@@ -1,0 +1,58 @@
+header {
+  .container-fluid {
+    // background-color: #060606;
+    //  height: 100%;
+    background-image: url("../images/bg.png");
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 1000px;
+
+    .container {
+      color: white;
+      font-size: 18px;
+      .row {
+        .col-md-4 {
+          img {
+            margin-top: 24px;
+          }
+
+        }
+        .col-md-3 {
+          margin-top: 30px;
+          h5 {
+
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bold;
+
+          }
+        }
+        .col-md-5 {
+          margin-top: 28px;
+          h5 {
+
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bold;
+
+          }
+        }
+        .col-md-12 {
+          h1 {
+            font-size: 60px;
+            color: #ffd50c;
+            margin-top: 15px;
+          }
+        }
+
+      }
+      .description{
+        .col-md-4{
+          font-size: ;
+        }
+
+      }
+    }
+  }
+}

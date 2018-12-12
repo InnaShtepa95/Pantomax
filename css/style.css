@@ -1,0 +1,29 @@
+header .container-fluid {
+  background-image: url("../images/bg.png");
+  background-position: top left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 1000px; }
+  header .container-fluid .container {
+    color: white;
+    font-size: 18px; }
+    header .container-fluid .container .row .col-md-4 img {
+      margin-top: 24px; }
+    header .container-fluid .container .row .col-md-3 {
+      margin-top: 30px; }
+      header .container-fluid .container .row .col-md-3 h5 {
+        display: inline-block;
+        font-size: 24px;
+        font-weight: bold; }
+    header .container-fluid .container .row .col-md-5 {
+      margin-top: 28px; }
+      header .container-fluid .container .row .col-md-5 h5 {
+        display: inline-block;
+        font-size: 24px;
+        font-weight: bold; }
+    header .container-fluid .container .row .col-md-12 h1 {
+      font-size: 60px;
+      color: #ffd50c;
+      margin-top: 15px; }
+
+/*# sourceMappingURL=style.css.map */
