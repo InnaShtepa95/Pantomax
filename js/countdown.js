@@ -10,17 +10,17 @@ CountdownTimer.prototype={
   var timer='';
   var today=new Date();
   //var day=Math.floor((this.tl-today)/(24*60*60*1000));
-  var hour=Math.floor(((this.tl-today)%(24*60*60*1000))/(60*60*1000));
-  var min=Math.floor(((this.tl-today)%(24*60*60*1000))/(60*1000))%60;
-  var sec=Math.floor(((this.tl-today)%(24*60*60*1000))/1000)%60%60;
+  var hour=Math.floor(Math.random() * 0)  ;
+  var min=Math.floor(Math.random()* 0 ) ;
+  var sec=Math.floor(Math.random() * 9) + 1;
   var me=this;
 
   if( ( this.tl - today ) > 0 ){
    //timer += '<span class="number-wrapper"><div class="line"></div><div class="caption">DAYS</div><span class="number day">'+day+'</span></span>';
    timer += '<span class="number-wrapper"><div class="line"></div><div class="caption"></div><span class="number hour">'+hour+'</span></span>';
-   timer += '<span class="number-wrapper"><div class="line"></div><div class="caption"></div><span class="number min">'+this.addZero(min)+'</span></span><span class="number-wrapper"><div class="line"></div><div class="caption"></div><span class="number sec">'+this.addZero(sec)+'</span></span>';
+   timer += '<span class="number-wrapper"><div class="line"></div><div class="caption"></div><span class="number min">'+min+'</span></span><span class="number-wrapper"><div class="line"></div><div class="caption"></div><span class="number sec">'+sec+'</span></span>';
    this.elem.innerHTML = timer;
-   tid = setTimeout( function(){me.countDown();},10 );
+   tid = setTimeout( function(){me.countDown();},1000 );
   }else{
    this.elem.innerHTML = this.mes;
    return;

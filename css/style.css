@@ -1,10 +1,10 @@
 header .container-fluid {
-  background-image: url("../images/bg.png");
-  background-position: top left;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-bottom: 1000px; }
+  background-color: #060606; }
   header .container-fluid .container {
+    background-image: url("../images/bg_2.png");
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
     color: white;
     font-size: 18px; }
     header .container-fluid .container .row .col-md-4 img {
@@ -25,21 +25,124 @@ header .container-fluid {
       font-size: 60px;
       color: #ffd50c;
       margin-top: 15px; }
-    header .container-fluid .container .description .col-md-4 h3 {
+    header .container-fluid .container .description .list_and_product h3 {
       font-size: 22px; }
-    header .container-fluid .container .description .col-md-4 ul {
+    header .container-fluid .container .description .list_and_product ul {
       list-style: none;
       padding-left: 0;
       margin-bottom: 0; }
-      header .container-fluid .container .description .col-md-4 ul li {
+      header .container-fluid .container .description .list_and_product ul li {
         padding-bottom: 5px;
         border-bottom: solid 2px transparent;
         border-image: linear-gradient(45deg, #000, #FFF, #000);
         border-image-slice: 1; }
-        header .container-fluid .container .description .col-md-4 ul li i {
+        header .container-fluid .container .description .list_and_product ul li i {
           color: #c23814;
           margin-right: 10px; }
-    header .container-fluid .container .description .col-md-4 img {
+    header .container-fluid .container .description .list_and_product img {
       margin-top: 0; }
+    header .container-fluid .container .description .count_and_form .notification {
+      border-radius: 10%;
+      max-width: 145px;
+      display: inline-block;
+      background-color: black;
+      opacity: .8; }
+      header .container-fluid .container .description .count_and_form .notification p {
+        padding-left: 10px;
+        color: #FFFFFF;
+        opacity: 1; }
+    header .container-fluid .container .description .count_and_form .contact_form form {
+      background-image: url("../images/form_head.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+      padding-top: 15px; }
+
+/* Contdonwn */
+body {
+  color: #000; }
+
+h1,
+h2 {
+  margin: 0;
+  color: #000;
+  text-shadow: 0 3px 3px #000000; }
+
+h1 {
+  font-size: 50px;
+  margin: 0 0 10px;
+  line-height: 1; }
+
+h2 {
+  font-size: 18px; }
+
+#CDT {
+  font-size: 50px;
+  color: #000;
+  margin: 70px 0 0;
+  font-weight: bold;
+  display: inline-block; }
+
+#CDT .number-wrapper {
+  margin: 5px;
+  -moz-box-shadow: 0 5px 8px #000000;
+  -webkit-box-shadow: 0 5px 8px #000000;
+  box-shadow: 0 5px 8px #000000;
+  position: relative; }
+
+#CDT .number {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background: #FFF;
+  -webkit-border-top-right-radius: 7px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 7px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 0 12px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border: 1px solid #555;
+  -moz-box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.2);
+  -moz-text-shadow: 0 3px 3px #000000;
+  -webkit-text-shadow: 0 3px 3px #000000;
+  text-shadow: 0 3px 3px #000000; }
+
+#CDT .line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 52%;
+  left: 0;
+  background: #000;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2); }
+
+.caption {
+  font-size: 12px;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: #777; }
 
 /*# sourceMappingURL=style.css.map */
