@@ -47,9 +47,33 @@ header {
         }
 
       }
-      .description{
-        .col-md-4{
-          font-size: ;
+      .description {
+        .col-md-4 {
+          h3 {
+            font-size: 22px;
+          }
+          ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            li {
+              padding-bottom: 5px;
+              border-bottom: solid 2px transparent;
+              border-image: linear-gradient(45deg, #000, #FFF, #000);
+              border-image-slice: 1;
+
+              i {
+                color: #c23814;
+
+                margin-right: 10px;
+
+              }
+            }
+          }
+          img{
+            margin-top: 0;
+          }
+
         }
 
       }

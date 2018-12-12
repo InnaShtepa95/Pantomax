@@ -25,5 +25,21 @@ header .container-fluid {
       font-size: 60px;
       color: #ffd50c;
       margin-top: 15px; }
+    header .container-fluid .container .description .col-md-4 h3 {
+      font-size: 22px; }
+    header .container-fluid .container .description .col-md-4 ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0; }
+      header .container-fluid .container .description .col-md-4 ul li {
+        padding-bottom: 5px;
+        border-bottom: solid 2px transparent;
+        border-image: linear-gradient(45deg, #000, #FFF, #000);
+        border-image-slice: 1; }
+        header .container-fluid .container .description .col-md-4 ul li i {
+          color: #c23814;
+          margin-right: 10px; }
+    header .container-fluid .container .description .col-md-4 img {
+      margin-top: 0; }
 
 /*# sourceMappingURL=style.css.map */
