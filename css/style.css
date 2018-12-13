@@ -51,7 +51,15 @@ header .container-fluid {
             color: #c23814;
             margin-right: 10px; }
       header .container-fluid .container .description .list_and_product img {
-        margin-top: 0; }
+        margin-top: 0;
+        width: 100%; }
+      header .container-fluid .container .description .sale .discount {
+        margin-top: 340px; }
+        header .container-fluid .container .description .sale .discount img {
+          width: 75%; }
+        header .container-fluid .container .description .sale .discount h3 {
+          font-size: 19px;
+          font-family: 'PT Sans Narrow', sans-serif; }
       header .container-fluid .container .description .count_and_form .notification {
         border-radius: 10%;
         max-width: 145px;
@@ -63,12 +71,6 @@ header .container-fluid {
           padding-left: 10px;
           color: #FFFFFF;
           opacity: 1; }
-      header .container-fluid .container .description .count_and_form .sale {
-        text-align: center; }
-        header .container-fluid .container .description .count_and_form .sale img {
-          margin-bottom: 0; }
-        header .container-fluid .container .description .count_and_form .sale h3 {
-          margin-bottom: 0; }
       header .container-fluid .container .description .count_and_form .contact_form {
         margin-top: 30px;
         margin-bottom: 25px; }
@@ -88,12 +90,12 @@ header .container-fluid {
               display: inline-block;
               margin: 10px 0 0 16px; }
               header .container-fluid .container .description .count_and_form .contact_form form .form_head .price:nth-child(2) {
-                margin-left: 35px;
-                font-weight: bold; }
+                margin-left: 35px; }
                 header .container-fluid .container .description .count_and_form .contact_form form .form_head .price:nth-child(2) h6 {
                   opacity: 1; }
                 header .container-fluid .container .description .count_and_form .contact_form form .form_head .price:nth-child(2) h4 {
-                  opacity: 1; }
+                  opacity: 1;
+                  font-weight: bold; }
                   header .container-fluid .container .description .count_and_form .contact_form form .form_head .price:nth-child(2) h4:before {
                     content: none; }
               header .container-fluid .container .description .count_and_form .contact_form form .form_head .price h6 {
@@ -158,6 +160,55 @@ header .container-fluid {
             margin-left: 25px; }
             header .container-fluid .container .description .count_and_form .contact_form form p i {
               margin-right: 9px; }
+
+section .question {
+  color: white; }
+  section .question .container-fluid {
+    background-color: black; }
+    section .question .container-fluid .container {
+      padding-bottom: 500px;
+      background-image: url("../images/fire.png");
+      background-position: top center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+      section .question .container-fluid .container .row .col-md-12 {
+        margin-top: 70px; }
+        section .question .container-fluid .container .row .col-md-12 h2 {
+          font-family: 'PT Sans Narrow', sans-serif;
+          text-transform: uppercase;
+          display: inline-block;
+          margin-left: 3px;
+          color: #FFFFFF;
+          font-size: 46px;
+          font-weight: bold; }
+          section .question .container-fluid .container .row .col-md-12 h2:nth-of-type(2) {
+            color: red; }
+          section .question .container-fluid .container .row .col-md-12 h2:nth-of-type(4) {
+            color: red; }
+          section .question .container-fluid .container .row .col-md-12 h2:nth-of-type(3) {
+            font-weight: normal; }
+        section .question .container-fluid .container .row .col-md-12 h4 {
+          font-size: 22px;
+          line-height: 60px;
+          margin: 0;
+          font-family: "PT Sans", sans-serif; }
+        section .question .container-fluid .container .row .col-md-12 .question_block {
+          background-color: #FFFFFF;
+          color: black;
+          font-family: "PT Sans", sans-serif; }
+          section .question .container-fluid .container .row .col-md-12 .question_block span {
+            background-color: #e5e5e5;
+            font-size: 30px;
+            font-family: "PT Sans", sans-serif;
+            font-weight: bold;
+            line-height: 60px;
+            padding-left: 14px;
+            padding-right: 14px;
+            margin-right: 15px;
+            border-radius: 50%; }
+          section .question .container-fluid .container .row .col-md-12 .question_block h4 {
+            font-weight: bold;
+            display: inline-block; }
 
 /* Contdonwn */
 body {
