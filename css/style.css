@@ -166,7 +166,6 @@ section .question {
   section .question .container-fluid {
     background-color: black; }
     section .question .container-fluid .container {
-      padding-bottom: 500px;
       background-image: url("../images/fire.png");
       background-position: top center;
       background-size: contain;
@@ -232,6 +231,74 @@ section .question {
               font-weight: bold; }
               section .question .container-fluid .container .row .col-md-12 .question_block .buttons a:nth-of-type(2) {
                 margin-left: 20px; }
+section .girl .container-fluid {
+  background-color: black; }
+  section .girl .container-fluid .container .row .col-md-12 {
+    margin-bottom: 58px;
+    padding-top: 65px; }
+    section .girl .container-fluid .container .row .col-md-12 .product_description {
+      background-image: url("../images/girl_2.png");
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      padding-top: 25px;
+      padding-left: 42px;
+      background-color: white;
+      max-width: 980px;
+      margin: auto;
+      padding-bottom: 30px; }
+      section .girl .container-fluid .container .row .col-md-12 .product_description h2 {
+        max-width: 540px;
+        color: black;
+        font-size: 48px;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-weight: bold; }
+        section .girl .container-fluid .container .row .col-md-12 .product_description h2 span {
+          color: red;
+          text-transform: uppercase; }
+      section .girl .container-fluid .container .row .col-md-12 .product_description p {
+        margin-bottom: 0;
+        max-width: 545px;
+        font-family: "PT Sans", sans-serif;
+        margin-top: 32px;
+        font-size: 17px; }
+        section .girl .container-fluid .container .row .col-md-12 .product_description p span {
+          font-weight: bold; }
+section .advantages .container-fluid {
+  background-color: black; }
+  section .advantages .container-fluid .container .string .col-md-12 h2 {
+    margin-bottom: 50px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    font-size: 48px;
+    color: white; }
+    section .advantages .container-fluid .container .string .col-md-12 h2 span {
+      font-weight: bold; }
+      section .advantages .container-fluid .container .string .col-md-12 h2 span:nth-last-of-type(1) {
+        color: red; }
+  section .advantages .container-fluid .container .examples {
+    margin: 0;
+    background-image: url("../images/bottle.png");
+    background-position: bottom left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    margin-bottom: 50px; }
+    section .advantages .container-fluid .container .examples .col-md-2 .adv_block {
+      margin-bottom: 15px;
+      height: 240px;
+      border-radius: 10px;
+      background-color: white; }
+      section .advantages .container-fluid .container .examples .col-md-2 .adv_block h4 {
+        text-align: center;
+        font-size: 16px;
+        color: black;
+        font-family: "PT Sans", sans-serif;
+        font-weight: bold; }
+      section .advantages .container-fluid .container .examples .col-md-2 .adv_block img {
+        width: 100%;
+        height: 168px; }
 
 /* Contdonwn */
 body {
