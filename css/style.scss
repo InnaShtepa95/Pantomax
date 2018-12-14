@@ -8,6 +8,13 @@
   url('../fonts/RobotoCondensBold.svg#RobotoCondensBold') format('svg');
 }
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+
 header {
 
   .container-fluid {
@@ -17,6 +24,10 @@ header {
     //  padding-bottom: 1000px;
 
     .container {
+      @include max-screen(768px) {
+        background-image: none;
+        font-size: 15px;
+      }
       background-image: url("../images/bg_2.png");
       background-position: top center;
       background-size: contain;
@@ -26,11 +37,24 @@ header {
       .row {
         .col-md-4 {
           img {
+
             margin-top: 24px;
+            @include max-screen(991px) {
+              width: 100%;
+            }
+            @include max-screen(767px) {
+              width: 90%;
+            }
           }
 
         }
         .col-md-3 {
+          @include max-screen(992px) {
+            text-align: right;
+          }
+          @include max-screen(768px) {
+            margin-top: 15px;
+          }
           font-family: 'PT Sans', sans-serif;
           margin-top: 30px;
           h5 {
@@ -43,6 +67,9 @@ header {
           }
         }
         .col-md-5 {
+          @include max-screen(768px) {
+            margin-top: 15px;
+          }
           margin-top: 28px;
           h5 {
 
@@ -53,7 +80,17 @@ header {
           }
         }
         .col-md-12 {
+          @include max-screen(992px) {
+            margin-top: 300px;
+          }
+          @include max-screen(768px) {
+            margin-top: 15px;
+          }
           h1 {
+            @include max-screen(992px) {
+              font-size: 45px;
+              text-align: center;
+            }
             font-family: 'RobotoCondensBold';
             font-size: 60px;
             color: #ffd50c;
@@ -63,6 +100,11 @@ header {
 
       }
       .description {
+        @include max-screen(768px) {
+          text-align: center;
+
+        }
+
         font-family: 'Roboto', sans-serif;
         .list_and_product {
           h3 {
@@ -91,11 +133,17 @@ header {
 
             margin-top: 0;
             width: 100%;
+            @include max-screen(768px) {
+              margin-top: 15px;
+              width: 50%;
+
+            }
           }
 
         }
         .sale {
           .discount {
+
             margin-top: 340px;
             img {
               width: 75%;
@@ -108,10 +156,14 @@ header {
           }
         }
         .count_and_form {
+          @include max-screen(768px) {
+            text-align: center;
 
+          }
           .notification {
             border-radius: 10%;
             p {
+              padding-right: 10px;
               font-family: 'PT Sans Narrow', sans-serif;
               padding-left: 10px;
               color: #FFFFFF;
@@ -126,15 +178,21 @@ header {
           }
 
           .contact_form {
+            text-align: center;
+
             margin-top: 30px;
             margin-bottom: 25px;
             form {
               border-radius: 5px;
               max-width: 290px;
+              @include max-screen(768px) {
+                margin: auto;
+              }
 
               background-color: #FFFFFF;
               .form_head {
                 .price {
+
                   &:nth-child(2) {
                     margin-left: 35px;
 
@@ -159,6 +217,9 @@ header {
 
                   }
                   h4 {
+                    @include max-screen(768px) {
+                      font-size: 30px;
+                    }
                     opacity: 0.3;
                     font-size: 38px;
                     position: relative;
@@ -183,14 +244,21 @@ header {
               }
 
               input {
+                @include max-screen(400px) {
+                  width: 240px;
+                  margin-left: 5px;
+                  margin-right: 5px;
+                }
                 font-family: 'PT Sans', sans-serif;
-                margin-left: 17px;
+                margin-left: 15px;
+                margin-right: 15px;
                 width: 255px;
                 height: 55px;
                 border-radius: 5px;
                 margin-bottom: 15px;
                 background-color: #f6f6f6;
                 padding-left: 16px;
+
                 color: #929292;
                 font-size: 14px;
                 border: solid 1px #e1e1e1;
@@ -198,6 +266,12 @@ header {
 
               }
               button {
+
+                @include max-screen(992px) {
+
+                  width: 220px;
+
+                }
                 font-family: 'PT Sans Narrow', sans-serif;
                 font-weight: bold;
                 position: relative;
@@ -205,7 +279,7 @@ header {
                 width: 255px;
                 height: 55px;
                 background-color: #f5481b;
-                margin-left: 17px;
+
                 border-radius: 5px;
                 box-shadow: none;
                 border: none;
@@ -256,6 +330,9 @@ section {
     .container-fluid {
       background-color: black;
       .container {
+        @include max-screen(600px) {
+          background-image: none;
+        }
 
         background-image: url("../images/fire.png");
         background-position: top center;
@@ -264,8 +341,17 @@ section {
 
         .row {
           .col-md-12 {
+            @include max-screen(667px) {
+              margin-top: 50px;
+
+            }
+
             margin-top: 100px;
             h2 {
+              @include max-screen(667px) {
+                font-size: 40px;
+
+              }
               font-family: 'PT Sans Narrow', sans-serif;
               text-transform: uppercase;
               display: inline-block;
@@ -287,13 +373,22 @@ section {
 
             }
             h4 {
+              @include max-screen(642px) {
+
+                font-size: 18px;
+                line-height: 36px;
+
+              }
               font-size: 22px;
               line-height: 60px;
               margin: 0;
               font-family: "PT Sans", sans-serif;
             }
             .question_block {
+              @include max-screen(667px) {
+                max-width: 400px;
 
+              }
               border-radius: 10px;
               margin: auto;
               max-width: 640px;
@@ -302,6 +397,10 @@ section {
               font-family: "PT Sans", sans-serif;
 
               span {
+                @include max-screen(667px) {
+                  font-size: 18px;
+                  line-height: 36px;
+                }
                 background-color: #e5e5e5;
                 font-size: 30px;
                 font-family: "PT Sans", sans-serif;
@@ -322,9 +421,20 @@ section {
               }
               .buttons {
                 margin-top: 40px;
+                @include max-screen(667px) {
+                  margin-top: 20px;
+                }
 
                 a {
+                  @include max-screen(667px) {
+                    width: 200px;
+                    font-size: 18px;
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-bottom: 15px;
+                  }
                   margin-bottom: 50px;
+                  margin-right: 10px;
                   line-height: 80px;
                   width: 250px;
                   border-radius: 10px;
@@ -338,7 +448,11 @@ section {
                   font-family: "PT Sans", sans-serif;
                   font-weight: bold;
                   &:nth-of-type(2) {
-                    margin-left: 20px;
+                    @include max-screen(667px) {
+                      margin-left: 0;
+                    }
+                    margin-left: 10px;
+                    margin-right: 0px;
 
                   }
                 }
@@ -356,10 +470,31 @@ section {
       .container {
         .row {
           .col-md-12 {
-            margin-bottom: 58px;
+            .girl_photo {
+              @include max-screen(991px){
+                max-width: 350px;
+                padding-top: 15px;
+                margin: auto;
+                img {
+                  border-radius: 10px;
+
+                  width: 100%;
+                }
+              }
+
+            }
+            margin-bottom: 15px;
             padding-top: 65px;
             .product_description {
+
               background-image: url("../images/girl_2.png");
+              @include max-screen(991px) {
+                background-image: none;
+                text-align: center;
+                padding-left: 0;
+
+              }
+
               background-position: right;
               background-size: contain;
               background-repeat: no-repeat;
@@ -367,17 +502,22 @@ section {
               padding-top: 25px;
               padding-left: 42px;
               background-color: white;
+
               max-width: 980px;
               margin: auto;
 
               padding-bottom: 30px;
 
               h2 {
+
                 span {
                   color: red;
                   text-transform: uppercase;
                 }
-
+                @include max-screen(991px) {
+                  max-width: none;
+                  font-size: 36px;
+                }
                 max-width: 540px;
 
                 color: black;
@@ -386,6 +526,10 @@ section {
                 font-weight: bold;
               }
               p {
+                @include max-screen(991px){
+                  max-width: none;
+                  font-size: 15px;
+                }
                 margin-bottom: 0;
 
                 max-width: 545px;
@@ -398,6 +542,7 @@ section {
               }
             }
           }
+
         }
       }
     }
@@ -411,6 +556,9 @@ section {
         .string {
           .col-md-12 {
             h2 {
+              @include max-screen(992px){
+                font-size: 36px;
+              }
               margin-bottom: 50px;
               font-family: 'PT Sans Narrow', sans-serif;
               text-transform: uppercase;
@@ -429,6 +577,9 @@ section {
         }
         .examples {
           margin: 0;
+          @include max-screen(991px) {
+            background-image: none;
+          }
           background-image: url("../images/bottle.png");
           background-position: bottom left;
           background-size: contain;
@@ -439,6 +590,7 @@ section {
           .col-md-2 {
 
             .adv_block {
+
               margin-bottom: 15px;
               height: 240px;
               border-radius: 10px;
@@ -454,6 +606,9 @@ section {
               img {
                 width: 100%;
                 height: 168px;
+                @include max-screen(400px){
+                  height: 120px;
+                }
 
               }
             }
@@ -461,11 +616,37 @@ section {
           }
         }
         .row {
+          .doctor_photo{
+
+            border-radius: 10px;
+            img{
+              width: 100%;
+              border-radius: 10px;
+              @include max-screen(768px){
+                max-width: 350px;
+                padding-top: 15px;
+                margin: auto;
+                width: 50%;
+                margin: auto;
+              }
+            }
+          }
 
           .col-md-12 {
 
+
             .doctor {
               position: relative;
+              @include max-screen(992px){
+
+                background-image: none;
+                padding-left: 15px;
+                font-size: 16px;
+                max-width: none;
+              }
+              @include max-screen(768px){
+                text-align: center;
+              }
 
               padding-bottom: 30px;
               background-image: url("../images/doctor_im.png");
@@ -481,6 +662,9 @@ section {
               margin-bottom: 15px;
 
               img {
+                @include max-screen(992px){
+                  display: none;
+                }
                 width: 190px;
                 height: 60px;
                 position: absolute;
@@ -490,6 +674,10 @@ section {
               }
 
               h2 {
+                @include max-screen(992px){
+                  max-width: none;
+                }
+
                 span {
                   color: red;
                   text-transform: uppercase;
@@ -503,6 +691,9 @@ section {
                 font-weight: bold;
               }
               p {
+                @include max-screen(992px){
+                  max-width: none;
+                }
                 margin-bottom: 0;
 
                 max-width: 545px;

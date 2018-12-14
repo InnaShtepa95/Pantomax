@@ -11,11 +11,27 @@ header .container-fluid {
     background-repeat: no-repeat;
     color: white;
     font-size: 18px; }
+    @media screen and (max-width: 768px) {
+      header .container-fluid .container {
+        background-image: none;
+        font-size: 15px; } }
     header .container-fluid .container .row .col-md-4 img {
       margin-top: 24px; }
+      @media screen and (max-width: 991px) {
+        header .container-fluid .container .row .col-md-4 img {
+          width: 100%; } }
+      @media screen and (max-width: 767px) {
+        header .container-fluid .container .row .col-md-4 img {
+          width: 90%; } }
     header .container-fluid .container .row .col-md-3 {
       font-family: 'PT Sans', sans-serif;
       margin-top: 30px; }
+      @media screen and (max-width: 992px) {
+        header .container-fluid .container .row .col-md-3 {
+          text-align: right; } }
+      @media screen and (max-width: 768px) {
+        header .container-fluid .container .row .col-md-3 {
+          margin-top: 15px; } }
       header .container-fluid .container .row .col-md-3 h5 {
         font-family: 'PT Sans', sans-serif;
         font-weight: bold;
@@ -24,17 +40,33 @@ header .container-fluid {
         font-weight: bold; }
     header .container-fluid .container .row .col-md-5 {
       margin-top: 28px; }
+      @media screen and (max-width: 768px) {
+        header .container-fluid .container .row .col-md-5 {
+          margin-top: 15px; } }
       header .container-fluid .container .row .col-md-5 h5 {
         display: inline-block;
         font-size: 24px;
         font-weight: bold; }
+    @media screen and (max-width: 992px) {
+      header .container-fluid .container .row .col-md-12 {
+        margin-top: 300px; } }
+    @media screen and (max-width: 768px) {
+      header .container-fluid .container .row .col-md-12 {
+        margin-top: 15px; } }
     header .container-fluid .container .row .col-md-12 h1 {
       font-family: 'RobotoCondensBold';
       font-size: 60px;
       color: #ffd50c;
       margin-top: 15px; }
+      @media screen and (max-width: 992px) {
+        header .container-fluid .container .row .col-md-12 h1 {
+          font-size: 45px;
+          text-align: center; } }
     header .container-fluid .container .description {
       font-family: 'Roboto', sans-serif; }
+      @media screen and (max-width: 768px) {
+        header .container-fluid .container .description {
+          text-align: center; } }
       header .container-fluid .container .description .list_and_product h3 {
         font-size: 22px; }
       header .container-fluid .container .description .list_and_product ul {
@@ -53,6 +85,10 @@ header .container-fluid {
       header .container-fluid .container .description .list_and_product img {
         margin-top: 0;
         width: 100%; }
+        @media screen and (max-width: 768px) {
+          header .container-fluid .container .description .list_and_product img {
+            margin-top: 15px;
+            width: 50%; } }
       header .container-fluid .container .description .sale .discount {
         margin-top: 340px; }
         header .container-fluid .container .description .sale .discount img {
@@ -60,6 +96,9 @@ header .container-fluid {
         header .container-fluid .container .description .sale .discount h3 {
           font-size: 19px;
           font-family: 'PT Sans Narrow', sans-serif; }
+      @media screen and (max-width: 768px) {
+        header .container-fluid .container .description .count_and_form {
+          text-align: center; } }
       header .container-fluid .container .description .count_and_form .notification {
         border-radius: 10%;
         max-width: 145px;
@@ -67,17 +106,22 @@ header .container-fluid {
         background-color: black;
         opacity: .8; }
         header .container-fluid .container .description .count_and_form .notification p {
+          padding-right: 10px;
           font-family: 'PT Sans Narrow', sans-serif;
           padding-left: 10px;
           color: #FFFFFF;
           opacity: 1; }
       header .container-fluid .container .description .count_and_form .contact_form {
+        text-align: center;
         margin-top: 30px;
         margin-bottom: 25px; }
         header .container-fluid .container .description .count_and_form .contact_form form {
           border-radius: 5px;
           max-width: 290px;
           background-color: #FFFFFF; }
+          @media screen and (max-width: 768px) {
+            header .container-fluid .container .description .count_and_form .contact_form form {
+              margin: auto; } }
           header .container-fluid .container .description .count_and_form .contact_form form .form_head {
             background-image: url("../images/top.png");
             background-size: cover;
@@ -106,6 +150,9 @@ header .container-fluid {
                 opacity: 0.3;
                 font-size: 38px;
                 position: relative; }
+                @media screen and (max-width: 768px) {
+                  header .container-fluid .container .description .count_and_form .contact_form form .form_head .price h4 {
+                    font-size: 30px; } }
                 header .container-fluid .container .description .count_and_form .contact_form form .form_head .price h4:before {
                   content: "________";
                   position: absolute;
@@ -113,7 +160,8 @@ header .container-fluid {
                   left: 10px; }
           header .container-fluid .container .description .count_and_form .contact_form form input {
             font-family: 'PT Sans', sans-serif;
-            margin-left: 17px;
+            margin-left: 15px;
+            margin-right: 15px;
             width: 255px;
             height: 55px;
             border-radius: 5px;
@@ -124,6 +172,11 @@ header .container-fluid {
             font-size: 14px;
             border: solid 1px #e1e1e1;
             box-shadow: none; }
+            @media screen and (max-width: 400px) {
+              header .container-fluid .container .description .count_and_form .contact_form form input {
+                width: 240px;
+                margin-left: 5px;
+                margin-right: 5px; } }
           header .container-fluid .container .description .count_and_form .contact_form form button {
             font-family: 'PT Sans Narrow', sans-serif;
             font-weight: bold;
@@ -132,12 +185,14 @@ header .container-fluid {
             width: 255px;
             height: 55px;
             background-color: #f5481b;
-            margin-left: 17px;
             border-radius: 5px;
             box-shadow: none;
             border: none;
             -webkit-box-shadow: 1px 1px 15px 1px #b13412;
             box-shadow: 1px 1px 15px 1px #b13412; }
+            @media screen and (max-width: 992px) {
+              header .container-fluid .container .description .count_and_form .contact_form form button {
+                width: 220px; } }
             header .container-fluid .container .description .count_and_form .contact_form form button i {
               border-top-left-radius: 5px;
               border-bottom-left-radius: 5px;
@@ -170,8 +225,14 @@ section .question {
       background-position: top center;
       background-size: contain;
       background-repeat: no-repeat; }
+      @media screen and (max-width: 600px) {
+        section .question .container-fluid .container {
+          background-image: none; } }
       section .question .container-fluid .container .row .col-md-12 {
         margin-top: 100px; }
+        @media screen and (max-width: 667px) {
+          section .question .container-fluid .container .row .col-md-12 {
+            margin-top: 50px; } }
         section .question .container-fluid .container .row .col-md-12 h2 {
           font-family: 'PT Sans Narrow', sans-serif;
           text-transform: uppercase;
@@ -180,6 +241,9 @@ section .question {
           color: #FFFFFF;
           font-size: 46px;
           font-weight: bold; }
+          @media screen and (max-width: 667px) {
+            section .question .container-fluid .container .row .col-md-12 h2 {
+              font-size: 40px; } }
           section .question .container-fluid .container .row .col-md-12 h2:nth-of-type(2) {
             color: red; }
           section .question .container-fluid .container .row .col-md-12 h2:nth-of-type(4) {
@@ -191,6 +255,10 @@ section .question {
           line-height: 60px;
           margin: 0;
           font-family: "PT Sans", sans-serif; }
+          @media screen and (max-width: 642px) {
+            section .question .container-fluid .container .row .col-md-12 h4 {
+              font-size: 18px;
+              line-height: 36px; } }
         section .question .container-fluid .container .row .col-md-12 .question_block {
           border-radius: 10px;
           margin: auto;
@@ -198,6 +266,9 @@ section .question {
           background-color: #FFFFFF;
           color: black;
           font-family: "PT Sans", sans-serif; }
+          @media screen and (max-width: 667px) {
+            section .question .container-fluid .container .row .col-md-12 .question_block {
+              max-width: 400px; } }
           section .question .container-fluid .container .row .col-md-12 .question_block span {
             background-color: #e5e5e5;
             font-size: 30px;
@@ -208,6 +279,10 @@ section .question {
             padding-right: 14px;
             margin-right: 15px;
             border-radius: 50%; }
+            @media screen and (max-width: 667px) {
+              section .question .container-fluid .container .row .col-md-12 .question_block span {
+                font-size: 18px;
+                line-height: 36px; } }
             section .question .container-fluid .container .row .col-md-12 .question_block span:nth-of-type(2) {
               background-color: transparent;
               padding-left: 0;
@@ -215,8 +290,12 @@ section .question {
               margin-right: 0; }
           section .question .container-fluid .container .row .col-md-12 .question_block .buttons {
             margin-top: 40px; }
+            @media screen and (max-width: 667px) {
+              section .question .container-fluid .container .row .col-md-12 .question_block .buttons {
+                margin-top: 20px; } }
             section .question .container-fluid .container .row .col-md-12 .question_block .buttons a {
               margin-bottom: 50px;
+              margin-right: 10px;
               line-height: 80px;
               width: 250px;
               border-radius: 10px;
@@ -229,13 +308,32 @@ section .question {
               font-size: 24px;
               font-family: "PT Sans", sans-serif;
               font-weight: bold; }
+              @media screen and (max-width: 667px) {
+                section .question .container-fluid .container .row .col-md-12 .question_block .buttons a {
+                  width: 200px;
+                  font-size: 18px;
+                  margin-right: 0;
+                  margin-left: 0;
+                  margin-bottom: 15px; } }
               section .question .container-fluid .container .row .col-md-12 .question_block .buttons a:nth-of-type(2) {
-                margin-left: 20px; }
+                margin-left: 10px;
+                margin-right: 0px; }
+                @media screen and (max-width: 667px) {
+                  section .question .container-fluid .container .row .col-md-12 .question_block .buttons a:nth-of-type(2) {
+                    margin-left: 0; } }
 section .girl .container-fluid {
   background-color: black; }
   section .girl .container-fluid .container .row .col-md-12 {
-    margin-bottom: 58px;
+    margin-bottom: 15px;
     padding-top: 65px; }
+    @media screen and (max-width: 991px) {
+      section .girl .container-fluid .container .row .col-md-12 .girl_photo {
+        max-width: 350px;
+        padding-top: 15px;
+        margin: auto; }
+        section .girl .container-fluid .container .row .col-md-12 .girl_photo img {
+          border-radius: 10px;
+          width: 100%; } }
     section .girl .container-fluid .container .row .col-md-12 .product_description {
       background-image: url("../images/girl_2.png");
       background-position: right;
@@ -248,6 +346,11 @@ section .girl .container-fluid {
       max-width: 980px;
       margin: auto;
       padding-bottom: 30px; }
+      @media screen and (max-width: 991px) {
+        section .girl .container-fluid .container .row .col-md-12 .product_description {
+          background-image: none;
+          text-align: center;
+          padding-left: 0; } }
       section .girl .container-fluid .container .row .col-md-12 .product_description h2 {
         max-width: 540px;
         color: black;
@@ -257,12 +360,20 @@ section .girl .container-fluid {
         section .girl .container-fluid .container .row .col-md-12 .product_description h2 span {
           color: red;
           text-transform: uppercase; }
+        @media screen and (max-width: 991px) {
+          section .girl .container-fluid .container .row .col-md-12 .product_description h2 {
+            max-width: none;
+            font-size: 36px; } }
       section .girl .container-fluid .container .row .col-md-12 .product_description p {
         margin-bottom: 0;
         max-width: 545px;
         font-family: "PT Sans", sans-serif;
         margin-top: 32px;
         font-size: 17px; }
+        @media screen and (max-width: 991px) {
+          section .girl .container-fluid .container .row .col-md-12 .product_description p {
+            max-width: none;
+            font-size: 15px; } }
         section .girl .container-fluid .container .row .col-md-12 .product_description p span {
           font-weight: bold; }
 section .advantages .container-fluid {
@@ -273,6 +384,9 @@ section .advantages .container-fluid {
     text-transform: uppercase;
     font-size: 48px;
     color: white; }
+    @media screen and (max-width: 992px) {
+      section .advantages .container-fluid .container .string .col-md-12 h2 {
+        font-size: 36px; } }
     section .advantages .container-fluid .container .string .col-md-12 h2 span {
       font-weight: bold; }
       section .advantages .container-fluid .container .string .col-md-12 h2 span:nth-last-of-type(1) {
@@ -285,6 +399,9 @@ section .advantages .container-fluid {
     background-repeat: no-repeat;
     padding-bottom: 50px;
     margin-bottom: 50px; }
+    @media screen and (max-width: 991px) {
+      section .advantages .container-fluid .container .examples {
+        background-image: none; } }
     section .advantages .container-fluid .container .examples .col-md-2 .adv_block {
       margin-bottom: 15px;
       height: 240px;
@@ -299,6 +416,21 @@ section .advantages .container-fluid {
       section .advantages .container-fluid .container .examples .col-md-2 .adv_block img {
         width: 100%;
         height: 168px; }
+        @media screen and (max-width: 400px) {
+          section .advantages .container-fluid .container .examples .col-md-2 .adv_block img {
+            height: 120px; } }
+  section .advantages .container-fluid .container .row .doctor_photo {
+    border-radius: 10px; }
+    section .advantages .container-fluid .container .row .doctor_photo img {
+      width: 100%;
+      border-radius: 10px; }
+      @media screen and (max-width: 768px) {
+        section .advantages .container-fluid .container .row .doctor_photo img {
+          max-width: 350px;
+          padding-top: 15px;
+          margin: auto;
+          width: 50%;
+          margin: auto; } }
   section .advantages .container-fluid .container .row .col-md-12 .doctor {
     position: relative;
     padding-bottom: 30px;
@@ -313,12 +445,24 @@ section .advantages .container-fluid {
     max-width: 985px;
     margin: auto;
     margin-bottom: 15px; }
+    @media screen and (max-width: 992px) {
+      section .advantages .container-fluid .container .row .col-md-12 .doctor {
+        background-image: none;
+        padding-left: 15px;
+        font-size: 16px;
+        max-width: none; } }
+    @media screen and (max-width: 768px) {
+      section .advantages .container-fluid .container .row .col-md-12 .doctor {
+        text-align: center; } }
     section .advantages .container-fluid .container .row .col-md-12 .doctor img {
       width: 190px;
       height: 60px;
       position: absolute;
       bottom: 15px;
       left: 330px; }
+      @media screen and (max-width: 992px) {
+        section .advantages .container-fluid .container .row .col-md-12 .doctor img {
+          display: none; } }
     section .advantages .container-fluid .container .row .col-md-12 .doctor h2 {
       text-transform: uppercase;
       max-width: 540px;
@@ -326,6 +470,9 @@ section .advantages .container-fluid {
       font-size: 48px;
       font-family: 'PT Sans Narrow', sans-serif;
       font-weight: bold; }
+      @media screen and (max-width: 992px) {
+        section .advantages .container-fluid .container .row .col-md-12 .doctor h2 {
+          max-width: none; } }
       section .advantages .container-fluid .container .row .col-md-12 .doctor h2 span {
         color: red;
         text-transform: uppercase; }
@@ -335,6 +482,9 @@ section .advantages .container-fluid {
       font-family: "PT Sans", sans-serif;
       margin-top: 32px;
       font-size: 16px; }
+      @media screen and (max-width: 992px) {
+        section .advantages .container-fluid .container .row .col-md-12 .doctor p {
+          max-width: none; } }
       section .advantages .container-fluid .container .row .col-md-12 .doctor p:last-child {
         font-weight: bold; }
       section .advantages .container-fluid .container .row .col-md-12 .doctor p span {
